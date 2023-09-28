@@ -9,8 +9,10 @@
 #define HAL_SEV_SEG_SEV_INTERFACE_H_
 
 
-void Sev_voidInit(u8 copy_u8SevPort);
-void Sev_voidSetAnode(u8 copy_u8SevPort, u8 copy_u8SevNum);
-void Sev_voidSetCath(u8 copy_u8SevPort, u8 copy_u8SevNum);
+void Sev_voidInit(void);
+void Sev_voidDisplay(u8 copy_u8SevNum);
+
+void Sev_voidInitMulti(void);
+void Sev_voidDisplayMulti( u8 copy_u8SevNum0 ,u8 copy_u8SevNum1);
 
 #endif /* HAL_SEV_SEG_SEV_INTERFACE_H_ */
